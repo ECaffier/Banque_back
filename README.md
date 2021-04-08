@@ -1,4 +1,4 @@
-Projet fil rouge : Une application de gestion d
+Projet fil rouge : /d Une application de gestion d
 e comptes bancaires
 Vous êtes développeur junior au sein du service informatique d’une grande enseigne bancaire. Le
 coeur de cible de cette banque était jusqu’à maintenant les épargnants âgés, qui utilisent peu
