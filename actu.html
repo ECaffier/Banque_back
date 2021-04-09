@@ -22,11 +22,7 @@
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/7e579ade86.js" crossorigin="anonymous"></script>
 </head>
-<body onload="cookies()">
-  <div class="layer" id="layerId">
-    <p id="ajaxCookies"></p>
-    <button  class="btn btn-blue btnLayer " onclick="hideLayer()"> Compris</button>
-  </div>
+<body onload="loadBlog()">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #477890">
       <div class="container-fluid">
@@ -69,57 +65,16 @@
     </section>
   </header>
   <main>
-    <section class="row justify-content-around cardAlign">
-      <div class="card cardStyle" style="width: 25vw;">
-        <div class="card-body cardHead">
-          <h5 class="card-title">Compte courant</h5>
-          <p class="card-text">N° compte : 587852147</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item cardStyle">Propriétaire : John Doe</li>
-          <li class="list-group-item cardStyle">Solde : 3 247 €</li>
-          <li class="list-group-item cardStyle">A third item</li>
-        </ul>
-        <div class="card-body">
-          <button class="btn btn-blue">Plus d'infos</button>
-        </div>
-      </div>
-      <div class="card cardStyle" style="width: 25vw;">
-        <div class="card-body cardHead">
-          <h5 class="card-title">Livret A</h5>
-          <p class="card-text">N° compte : 412852147</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item cardStyle">Propriétaire : John Doe</li>
-          <li class="list-group-item cardStyle">Solde : 5 694 €</li>
-          <li class="list-group-item cardStyle">A third item</li>
-        </ul>
-        <div class="card-body">
-          <button class="btn btn-blue">Plus d'infos</button>
-        </div>
-      </div>
-      <div class="card cardStyle" style="width: 25vw;">
-        <div class="card-body cardHead">
-          <h5 class="card-title">PEL</h5>
-          <p class="card-text">N° compte : 369852147</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item cardStyle">Propriétaire : John Doe</li>
-          <li class="list-group-item cardStyle">Solde : 256 410 €</li>
-          <li class="list-group-item cardStyle">A third item</li>
-        </ul>
-        <div class="card-body">
-          <button class="btn btn-blue">Plus d'infos</button>
-        </div>
-      </div>
+    <section id="apiContent"> 
+
     </section>
   </main>
+
   <footer class="py-3">
     <i class="fab fa-facebook-f prout"></i>
     <i class="fab fa-twitter prout"></i>
     <i class="fab fa-instagram prout"></i>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
