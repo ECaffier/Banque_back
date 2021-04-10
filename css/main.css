@@ -87,14 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-  background-color: #A2AEBB;
+  background-color: #E6E6EA;
   color :#F6F4F3;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+h1{
+  font-family: 'Gugi', cursive;
 }
 main{
   min-height: 80vh;
 }
 .top{
   background-color: #274060;
+  border-top: 0.1rem solid black;
 }
 .navFont{
   color:#ccc;
@@ -106,23 +111,25 @@ main{
   position: fixed;
   z-index: 10;
 }
-.btnLayer{
-  margin-left: 47.5vw;
-}
+
 .cardAlign{
-  padding-top: 18vh;
-  max-width: 100%;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  max-width: 90%;
+  margin: 1vw;
 }
 
 .card-body a{
   color:#F6F4F3;
 }
 .cardStyle{
-  background-color: #274060;
-  color :#F6F4F3;
+  background-color: #A6A9C9;
+  color :black;
+  margin-bottom: 5vh;
 }
 .cardHead{
-  background-color: #477890;
+  background-color: #274060;
+  color:#F6F4F3;
 }
 #ajaxCookies{
   margin-top: 10vh;
@@ -135,7 +142,7 @@ main{
 }
 
 .btn-blue{
-  background-color:#477890;
+  background-color:#274060;
   color:#F6F4F3;
 }
 footer{
@@ -148,6 +155,26 @@ footer{
 .prout{
   font-size: 2em;
   margin-top: 1em;
+}
+
+@media screen and (min-width:720px){
+
+  .card{
+    width:35vw;
+  }
+}
+
+@media screen and (min-width:1200px){
+
+  .card{
+    width:25vw;
+  }
+}
+@media screen and (min-width:1600px){
+  .card{
+    width: 20vw;
+    margin-left: 5vw;
+  }
 }
 
 /* ==========================================================================

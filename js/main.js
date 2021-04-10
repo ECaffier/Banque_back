@@ -1,16 +1,15 @@
 function loadBlog() {
-    alert("prout");
     let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function() {
-        let apiContent = document.querySelector('section');
+        let apiContent = document.querySelector('main section');
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
             if (httpRequest.status === 200) {
                 let data = JSON.parse(httpRequest.responseText);
                 for (let i = 0 ; i< data.length; i++ ) {
-                    apiContent.innerHTML += '<div class=card>'+'<h5 class="card-header">'+ data[i].id +'</h5>'+
+                    apiContent.innerHTML += '<div class="card cardStyle">'+'<h5 class="card-header cardHead">'+ data[i].id +'</h5>'+
                     '<div class="card-body">'+ '<h5 class="card-title">'+ data[i].titre + '</h5>'+
                     '<p class="card-text">'+ data[i].contenu +'</p>'+
-                    '<a href="#" class="btn btn-primary">'+ "En savoir plus" +'</a>'+'</div>'+'</div>';
+                    '<a href="#" class="btn btn-blue">'+ "En savoir plus" +'</a>'+'</div>'+'</div>';
                 }
             } 
             else {
