@@ -34,6 +34,13 @@
           <p>L'argent est un problème, on vous en débarasse</p>
           </div>
         </section>
+        <?php 
+  if(isset($_SESSION["user"])):
+?>
+  <a class="btn btn-dark mx-3" href="../public/logout.php">Déconnexion</a>
+<?php
+  endif;
+?>
   </header>
 
   <!-- <body onload="cookies()"> -->
@@ -43,3 +50,4 @@
   </div> -->
 
   <main>
+
