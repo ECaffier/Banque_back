@@ -5,7 +5,7 @@ require "../model/connexion.php";
 include "../layout/header.php";
 
 
-$accounts = getAccountByUser($db);
+$accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
 
 ?>
 

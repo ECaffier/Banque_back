@@ -1,6 +1,7 @@
+
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #274060">
       <div class="container-fluid">
-        <a class="navbar-brand navFont" href="index.html"><i class="fas fa-piggy-bank"></i></a>
+        <a class="navbar-brand navFont" href="index.php"><i class="fas fa-piggy-bank"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -14,6 +15,9 @@
             </li>
             <li>
               <a class="nav-link" href="#">Statistiques</a>
+            </li>
+            <li>
+              <a class="nav-link" href="newAccount.php">Créer un compte</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

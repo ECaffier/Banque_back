@@ -1,10 +1,11 @@
 <?php
+    session_start();
     require "../model/accountModel.php";
     require "../model/accounts.php";
     require "../model/connexion.php";
     include "../layout/header.php";
 
-    $accounts = getAccountByUser($db);
+    $accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
 
     if(isset($_GET["id"]) && isset($accounts[$_GET["id"]])){
         $account = $accounts[$_GET["id"]];
