@@ -1,5 +1,5 @@
 
-<?php include ("../layout/header.php") ?>
+<?php include ("view/layout/header.php") ?>
 
 
   <section class ="row justify-content-around cardAlign" id="apiContent">
@@ -7,5 +7,5 @@
   </section>
 
 
-<?php include ("../layout/footer.php") ?>
+<?php include ("view/layout/footer.php") ?>
 

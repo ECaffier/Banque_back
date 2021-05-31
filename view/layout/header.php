@@ -20,14 +20,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="public/css/main.css">
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/7e579ade86.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
-    <?php include ("../layout/nav.php") ?>
+    <?php include ("nav.php") ?>
         <section class="top py-3">
           <div class="offset-1">
           <h1>Les freres rape-tout</h1>
@@ -37,7 +37,7 @@
         <?php 
   if(isset($_SESSION["user"])):
 ?>
-  <a class="btn btn-dark mx-3" href="../public/logout.php">Déconnexion</a>
+  <a class="btn btn-dark mx-3" href="logout.php">Déconnexion</a>
 <?php
   endif;
 ?>

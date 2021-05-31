@@ -1,17 +1,7 @@
-<?php
-session_start();
-require "../model/accountModel.php";
-require "../model/connexion.php";
-include "../layout/header.php";
-
-
-$accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
-
+<?php 
+include "view/layout/header.php";
 ?>
 
-    <?php if(!isset($_SESSION["user"])): 
-      header("Location:login.php");
-    endif ?>
 <div class="row">
     <?php foreach($accounts as $id => $account) : ?>
         <div class="col-6 col-md-4">
@@ -27,6 +17,4 @@ $accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
     <?php endforeach; ?>
 </div>
 
-
-<?php include "../layout/footer.php"; ?>
-
+<?php include "layout/footer.php"; ?>

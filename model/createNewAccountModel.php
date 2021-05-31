@@ -1,6 +1,6 @@
 
 <?php
-require "../model/connexion.php";
+require "connexion.php";
 
 
 function addAccount(PDO $db, array $newAccount){

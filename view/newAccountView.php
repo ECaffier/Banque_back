@@ -1,18 +1,4 @@
-<?php
-session_start();
-    include "../layout/header.php";
-    require "../model/createNewAccount.php";
-    require "../model/connexion.php";
-
-
-    if(!empty($_POST)) {
-        if (!addAccount($db, $_POST)) {
-            echo "L'enregistrement a échoué";
-        }
-    }
-
-
-?>
+<?php include "layout/header.php"; ?>
 
 <div class="row">
     <aside class="col-12 col-md-4">
@@ -20,7 +6,7 @@ session_start();
         <form action="" method="POST">
             <input name="solde" class="form-control my-2" type="number">
             <p>
-            <label for="pays">Dans quel pays habitez-vous ?</label><br />
+            <label for="createNewAccount">Créer un nouveau compte</label><br />
                 <select name="account_type" id="account_type" class="form-control my-2" type="text">
                     <option value="PEL">PEL</option>
                     <option value="Livret A">Livret A</option>
@@ -43,5 +29,5 @@ session_start();
 
 
  <?php
-    include "../layout/footer.php";
+    include "layout/footer.php";
  ?>
