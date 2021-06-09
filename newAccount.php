@@ -1,4 +1,9 @@
 <?php
+
+if(!isset($_SESSION["user"])): 
+    header("Location:login.php");
+endif; 
+
 session_start();
 
     require "model/createNewAccountModel.php";

@@ -1,10 +1,13 @@
 <?php 
   require "model/userModel.php";
   require "model/connexion.php";
+  require "model/db.php";
+
+$userModel = new userModel();
 
 // Si les champ nom et mot de passe ont été remplis
   if(isset($_POST["email"]) && isset($_POST["password"])) {
-    $user = getUserByEmail($db, $_POST["email"]);
+    $user = $userModel->getUserByEmail($_POST["email"]);
     //Si la base de données a renvoyé un utilisateur avec ce mail
     if($user){
         // On vérifie le mot de passe

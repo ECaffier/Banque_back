@@ -1,19 +1,23 @@
 <?php
+
 session_start();
+require "model/db.php";
 require "model/accountModel.php";
-require "model/connexion.php";
+require "model/userModel.php";
+require "model/entity/user.php";
 
+$userModel = new accountModel();
 
-$accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
-
-?>
-
-    <?php if(!isset($_SESSION["user"])): 
+  if(!isset($_SESSION["user"])): 
       header("Location:login.php");
-    endif ?>
+  endif; 
+
+  $users = $userModel->getAccountByUser($_SESSION["user"]["userID"]);
+
+  // $accounts = new accountModel($_SESSION["user"]["userID"]);
+  // $accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
 
 
-<?php 
 
 require "view/indexView.php";
  ?>
