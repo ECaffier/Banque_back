@@ -1,22 +1,22 @@
 <?php
-
-session_start();
 require "model/db.php";
 require "model/accountModel.php";
 require "model/userModel.php";
 require "model/entity/user.php";
+require "model/entity/account.php";
+
+session_start();
 
 $userModel = new accountModel();
+$user = $_SESSION["user"];
 
-  if(!isset($_SESSION["user"])): 
-      header("Location:login.php");
-  endif; 
 
-  $users = $userModel->getAccountByUser($_SESSION["user"]["userID"]);
+if(!isset($_SESSION["user"])): 
+  header("Location:login.php");
+endif; 
 
-  // $accounts = new accountModel($_SESSION["user"]["userID"]);
+$accounts = $userModel->getAccountByUser($user->getUserID());
   // $accounts = getAccountByUser($db, $_SESSION["user"]["userID"]);
-
 
 
 require "view/indexView.php";

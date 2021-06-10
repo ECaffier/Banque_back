@@ -1,25 +1,18 @@
 <?php 
 
-// function getUserByEmail(PDO $db, string $email) {
-//     $query = $db->prepare("SELECT * FROM user WHERE email=:email");
-//     $query->execute([
-//         "email" => $email
-//     ]);
-//     $result = $query->fetch(PDO::FETCH_ASSOC);
-//     return $result;
 
-// }
 
 final class userModel{
 
     private PDO $_db;
 
-    public function getUserByEmail(string $email):array{
+    public function getUserByEmail(string $email){
         $query = $this->_db->prepare("SELECT * FROM user WHERE email=:email");
         $query->execute([
             "email" => $email
         ]);
         $result = $query->fetch(PDO::FETCH_ASSOC);
+        $result = new User($result);
         return $result;
     }
     function __construct(){
@@ -29,4 +22,14 @@ final class userModel{
 
 
 }
+
+// function getUserByEmail(PDO $db, string $email) {
+//     $query = $db->prepare("SELECT * FROM user WHERE email=:email");
+//     $query->execute([
+//         "email" => $email
+//     ]);
+//     $result = $query->fetch(PDO::FETCH_ASSOC);
+//     return $result;
+
+// }
 ?>

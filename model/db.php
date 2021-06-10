@@ -5,7 +5,7 @@ abstract class DataBase {
     const HOST = "localhost";
     const NAME = "banque_php";
     const LOGIN = "root";
-    const PASSWORD = "";
+    const PASSWORD = "root";
 
     static public function getDB(){
         try{

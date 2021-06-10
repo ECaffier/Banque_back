@@ -13,36 +13,36 @@ class User {
     public function setUserID(int $userID){
         $this->userID = $userID;
     }
-    public function setFirstname(string $firstname){
-        $this->firstname = $firstname;
-    }
-    public function setLastname(string $lastname){
-        $this->lastname = $lastname;
-    }
-    public function setEmail(string $email){
-        $this->email = $email;
-    }
-    public function setPass(string $pass){
-        $this->pass = $pass;
-    }
-    public function setBirthdate(string $birthdate){
-        $this->birthdate = $birthdate;
-    }
     public function getUserID():int{
         return $this->userID;
+    }
+    public function setFirstname(string $firstname){
+        $this->firstname = $firstname;
     }
     public function getFirstname():string{
         return $this->firstname;
     }   
+    public function setLastname(string $lastname){
+        $this->lastname = $lastname;
+    }
     public function getLastname():string{
         return $this->lastname;
+    }
+    public function setEmail(string $email){
+        $this->email = $email;
     }
     public function getEmail():string{
         return $this->email;
     }
+    public function setPass(string $pass){
+        $this->pass = $pass;
+    }
     public function getPass():string{
         return $this->pass;
     }
+    public function setBirthdate(string $birthdate){
+        $this->birthdate = $birthdate;
+    }  
     public function getBirthdate():string{
         return $this->birthdate;
     }
@@ -55,13 +55,14 @@ class User {
             }
         }
     }
-
     function __construct(array $data = null){
         if($data){
             $this->hydrate($data);
         }
     }
-
+    
+    
+    
 
 
 }

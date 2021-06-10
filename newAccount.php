@@ -1,20 +1,24 @@
 <?php
+require "model/accountModel.php";
+require "model/db.php";
+require "model/entity/user.php";
+require "model/entity/account.php";
+
+session_start();
+
+
 
 if(!isset($_SESSION["user"])): 
     header("Location:login.php");
 endif; 
 
-session_start();
+if(!empty($_POST)) {
+    $account = new Account($_POST);
 
-    require "model/createNewAccountModel.php";
-    require "model/connexion.php";
+    $accountModel = new AccountModel();
 
-
-    if(!empty($_POST)) {
-        if (!addAccount($db, $_POST)) {
-            echo "L'enregistrement a échoué";
-        }
-    }
+    $accountModel->addAccount($account);
+}
 
 
 require "view/newAccountView.php";

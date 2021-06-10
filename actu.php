@@ -1,9 +1,11 @@
 
 <?php
   include ("view/layout/header.php");
+
+  session_start();
   if(!isset($_SESSION["user"])): 
   header("Location:login.php");
-endif; 
+  endif; 
 
 ?>
 

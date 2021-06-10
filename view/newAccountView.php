@@ -20,8 +20,8 @@
         <h3>Vos informations</h3>
         <?php if(isset($account)): ?>
             <ul class="list-group my-3">
-                <li class="list-group-item"><?php echo htmlspecialchars($account["account_type"]) ?></li>
-                <li class="list-group-item"><?php echo $account["solde"] ?></li>
+                <li class="list-group-item"><?php echo htmlspecialchars($account->getAccount_type()) ?></li>
+                <li class="list-group-item"><?php echo $account->getSolde() ?></li>
             </ul>
         <?php endif; ?>
     </section>
