@@ -8,6 +8,8 @@
         <p class="border border-danger py-3"><?php echo $singleAccounts->getSolde();?></p>
         <p class="border border-danger py-3"><?php echo $singleAccounts->getDate_creation();?></p>
         <a class="btn btn-danger text-white px-5" href="deleteAccount.php?id=<?php echo $singleAccounts->getAccountID();?>">Supprimer le compte</a>
+        <a class="btn btn-danger text-white px-5" href="deposit.php?id=<?php echo $singleAccounts->getAccountID();?>">Depot</a>
+        <a class="btn btn-danger text-white px-5" href="withdraw.php?id=<?php echo $singleAccounts->getAccountID();?>">Retrait</a>
     </div>
 <?php else: ?>
     <div class="alert alert-secondary text-center" role="alert">

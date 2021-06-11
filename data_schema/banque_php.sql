@@ -29,7 +29,7 @@ CREATE TABLE banque_php.account
 CREATE TABLE banque_php.operation
 (
     operationID INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    type_operation DECIMAL(10,2),
+    amount FLOAT,
     date_operation DATE,
     motif_operation VARCHAR(100),
     accountID INT UNSIGNED NOT NULL,

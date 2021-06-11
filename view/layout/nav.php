@@ -25,7 +25,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Retrait d'argent</a></li>
-                <li><a class="dropdown-item" href="#">Dépot d'argent</a></li>
+                <li><a class="dropdown-item" href="deposit.php">Dépot d'argent</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Virement</a></li>
                 <li><a class="dropdown-item" href="#">Supprimer un compte</a></li>
