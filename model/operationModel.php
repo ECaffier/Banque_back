@@ -15,7 +15,7 @@ class operationModel{
         return $result;
     }
     function withdraw(Operation $operation){
-        $query= $this->_db->prepare("INSERT INTO operation (operation_type, amount, date_operation, motif_operation, accountID) VALUES('withdraw', :amount, NOW(), :motif_operation, :accountID)");
+        $query= $this->_db->prepare("INSERT INTO operation (operation_type, amount, date_operation, motif_operation, accountID) VALUES('retrait', -:amount, NOW(), :motif_operation, :accountID)");
         $result = $query->execute([
             "amount" =>$operation->getAmount(),
             "motif_operation" => $operation->getMotif_operation(),

@@ -4,6 +4,7 @@ require "model/accountModel.php";
 require "model/userModel.php";
 require "model/entity/user.php";
 require "model/entity/account.php";
+require "model/entity/operation.php";
 
 session_start();
 

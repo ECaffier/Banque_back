@@ -4,7 +4,7 @@ class Operation{
 
     protected int $operationID;
     protected string $operation_type;
-    protected string $amount;
+    protected float $amount;
     protected string $date_operation;
     protected string $motif_operation;
     protected int $accountID;
@@ -21,10 +21,10 @@ class Operation{
     public function getOperation_type():int{
         return $this->operation_type;
     }
-    public function setAmount(string $amount){
+    public function setAmount(float $amount){
         $this->amount = $amount;
     }
-    public function getAmount():string{
+    public function getAmount():float{
         return $this->amount;
     }
     public function setDate_operation(string $date_operation){

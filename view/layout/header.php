@@ -26,7 +26,7 @@
   <script src="https://kit.fontawesome.com/7e579ade86.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header class="mb-5">
     <?php include ("nav.php") ?>
         <section class="top py-3">
           <div class="offset-1">
@@ -37,7 +37,7 @@
         <?php 
   if(isset($_SESSION["user"])):
 ?>
-  <a class="btn btn-dark mx-3" href="logout.php">Déconnexion</a>
+
 <?php
   endif;
 ?>

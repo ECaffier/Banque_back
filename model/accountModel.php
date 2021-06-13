@@ -42,10 +42,20 @@ class accountModel{
         ]);
         return $result;
     }
+    function editAccount($amount, $accountID){
+        $query= $this->_db->prepare("UPDATE account SET solde = :amount WHERE accountID=:accountID");
+        $result = $query->execute([
+            "amount"=>$amount,
+            "accountID"=>$accountID
+        ]);
+        return $result;
+
+    }
 
     function __construct(){
         $this->_db = DataBase::getDB();
     }
+
 
 }
 

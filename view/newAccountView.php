@@ -1,6 +1,6 @@
 <?php include "layout/header.php"; ?>
 
-<div class="row">
+<div class="row text-dark">
     <aside class="col-12 col-md-4">
         <h2>Créer un compte</h2>
         <form action="" method="POST">
@@ -13,7 +13,7 @@
                     <option value="Courant">Courant</option>
                 </select>
             </p>
-            <input class="form-control btn btn-warning text-dark my-2" type="submit" value="Envoyer">
+            <input class="form-control btn btn-blue text-white my-2" type="submit" value="Envoyer">
         </form>
     </aside>
     <section class="col-12 col-md-8">

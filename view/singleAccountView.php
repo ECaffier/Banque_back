@@ -4,12 +4,13 @@
 
 <?php if(isset($singleAccounts)): ?>
 <div class="container text-dark py-5 text-center">
-        <h2 class="border border-danger py-5"><?php echo $singleAccounts->getAccount_type();?></h2>
-        <p class="border border-danger py-3"><?php echo $singleAccounts->getSolde();?></p>
-        <p class="border border-danger py-3"><?php echo $singleAccounts->getDate_creation();?></p>
+        <h2 class="border border-dark py-5"><?php echo $singleAccounts->getAccount_type();?></h2>
+        <p class="border border-dark py-3"><?php echo $singleAccounts->getSolde();?></p>
+        <p class="border border-dark py-3"><?php echo $singleAccounts->getDate_creation();?></p>
+        <a class="btn btn-blue text-white px-5" href="deposit.php?id=<?php echo $singleAccounts->getAccountID();?>">Depot</a>
+        <a class="btn btn-blue text-white px-5" href="withdraw.php?id=<?php echo $singleAccounts->getAccountID();?>">Retrait</a>
         <a class="btn btn-danger text-white px-5" href="deleteAccount.php?id=<?php echo $singleAccounts->getAccountID();?>">Supprimer le compte</a>
-        <a class="btn btn-danger text-white px-5" href="deposit.php?id=<?php echo $singleAccounts->getAccountID();?>">Depot</a>
-        <a class="btn btn-danger text-white px-5" href="withdraw.php?id=<?php echo $singleAccounts->getAccountID();?>">Retrait</a>
+        
     </div>
 <?php else: ?>
     <div class="alert alert-secondary text-center" role="alert">

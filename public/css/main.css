@@ -112,12 +112,6 @@ main{
   z-index: 10;
 }
 
-.cardAlign{
-  padding-top: 10vh;
-  padding-left: 5vw;
-  max-width: 90%;
-  margin: 1vw;
-}
 
 .card-body a{
   color:#F6F4F3;
@@ -161,6 +155,7 @@ footer{
 
   .card{
     width:35vw;
+    margin-left: 10px;
   }
 }
 
@@ -173,7 +168,7 @@ footer{
 @media screen and (min-width:1600px){
   .card{
     width: 20vw;
-    margin-left: 5vw;
+
   }
 }
 
